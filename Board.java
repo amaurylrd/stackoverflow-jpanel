@@ -1,6 +1,5 @@
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-import java.awt.Dimension;
 import java.awt.Color;
 import java.awt.GridLayout;
 
@@ -24,16 +23,6 @@ public class Board extends JFrame  {
         
         totalGUI.add(mainPanel);
         return totalGUI;
-    }
-
-    private class Rectangle extends JPanel {
-        public Rectangle(Color color, int size) {
-            super();
-            this.setBackground(color);
-            this.setMinimumSize(new Dimension(size, size));
-            this.setMaximumSize(new Dimension(size, size));
-            this.setPreferredSize(new Dimension(size, size));
-        }
     }
 
     private JPanel createSquareJPanel(Color color, int size) {
