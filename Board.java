@@ -23,7 +23,6 @@ public class Board extends JFrame  {
         mainPanel.add(blue);
         
         totalGUI.add(mainPanel);
-        totalGUI.setOpaque(true);
         return totalGUI;
     }
 
@@ -31,7 +30,6 @@ public class Board extends JFrame  {
         public Rectangle(Color color, int size) {
             super();
             this.setBackground(color);
-            this.setOpaque(true);
             this.setMinimumSize(new Dimension(size, size));
             this.setMaximumSize(new Dimension(size, size));
             this.setPreferredSize(new Dimension(size, size));
